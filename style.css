@@ -82,6 +82,18 @@ body{
 .form-actions{display:flex;gap:.5rem;align-items:center;margin-top:.5rem}
 .form-status{margin-top:.5rem;color:var(--accent)}
 
+.contact-list a {
+  color: #00bcd4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+
 /* Footer */
 .site-footer{padding:1rem 1rem;border-top:1px solid rgba(255,255,255,0.02);color:var(--muted);text-align:center}
 
@@ -99,3 +111,4 @@ body{
   .nav.show{display:flex}
   .nav-toggle{display:block}
 }
+
