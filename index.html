@@ -1,157 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Saymon Christian Villa — Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saymon Christian Villa | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#home">Saymon Villa</a>
-    <nav class="nav" id="nav">
-      <a href="#home" class="nav-link">Home</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#contact" class="nav-link">Contact</a>
-      <a class="btn-outline" href="resume.html" id="resumeLink">Resume</a>
-    </nav>
-    <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+  <!-- ===== HERO SECTION ===== -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="animate-slide">Saymon Christian Villa</h1>
+      <h2 class="animate-fade">Software Design</h2>
+      <p class="motto">"It's not how much time you have, it's how you use it."</p>
+      <a href="#contact" class="btn">Let's Connect</a>
+    </div>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="hero-inner">
-        <h1>Saymon Christian Villa</h1>
-        <p class="tagline">Aspiring Software Design Engineer • Electronics & Embedded Systems Enthusiast</p>
-        <div class="hero-ctas">
-          <a class="btn-primary" href="#projects">View Projects</a>
-          <a class="btn-secondary" href="resume.html" id="downloadResume">Resume (Print/PDF)</a>
-        </div>
-      </div>
-      <div class="hero-decor"></div>
-    </section>
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section">
+    <h2 class="section-title animate-slide">About Me</h2>
+    <p class="about-text animate-fade">
+      I’m a passionate software design student who loves building ideas into reality.
+      I focus on creating practical solutions through code and exploring how technology
+      can make life simpler and smarter.
+    </p>
+  </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About Me</h2>
-        <div class="about-grid">
-          <div class="about-text">
-            <p>Hello — I’m Saymon, a budding software and hardware designer who builds systems that blend embedded electronics and software. I enjoy Verilog, developing on Raspberry Pi, and building speech recognition and control systems.</p>
-            <p>Recent projects include a four-story elevator simulation in Verilog, a Raspberry Pi-based speech recognition system using Vosk/Google APIs, and a temperature-conversion system.</p>
-          </div>
-          <div class="about-card">
-            <ul>
-              <li><strong>Location:</strong> Tayabas City, Quezon Province, Philippines</li>
-              <li><strong>Email:</strong> saymonchristianvilla@gmail.com</li>
-              <li><strong>GitHub:</strong> https://github.com/scvilla07th</li>
-              <li><strong>LinkedIn:</strong> https://www.linkedin.com/in/saymon-christian-villa/</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section alt">
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <div class="skill">
-            <h3>Hardware & HDL</h3>
-            <p>Verilog, FPGA design, Quartus</p>
-          </div>
-          <div class="skill">
-            <h3>Embedded</h3>
-            <p>Raspberry Pi 4, Debian, GPIO, C/C++</p>
-          </div>
-          <div class="skill">
-            <h3>Software</h3>
-            <p>Python, Linux, algorithm design</p>
-          </div>
-          <div class="skill">
-            <h3>Speech Recognition</h3>
-            <p>Vosk, Google Speech APIs, acoustic processing</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-          <article class="project-card">
-            <h3>Four-Story Elevator (Verilog)</h3>
-            <p>Finite-state elevator controller implemented in Verilog; starts at floor 1, floor request handling, safety flags, and LED output mappings.</p>
-            <div class="project-tags"><span>Verilog</span><span>Quartus</span></div>
-          </article>
-
-          <article class="project-card">
-            <h3>Speech Recognition App (Raspberry Pi)</h3>
-            <p>Real-time pronunciation evaluation using Vosk + Google API, stores evaluation reports in a database. Deployed on Raspberry Pi 4.</p>
-            <div class="project-tags"><span>Python</span><span>Vosk</span></div>
-          </article>
-
-          <article class="project-card">
-            <h3>Temperature Conversion System</h3>
-            <p>Interactive converter with validation, edge-case handling, and status flags for data integrity.</p>
-            <div class="project-tags"><span>Embedded</span><span>Design</span></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section alt">
-      <div class="container">
-        <h2>Contact</h2>
-        <div class="contact-grid">
-          <div>
-            <p>Want to work together or see source code? Drop a message.</p>
-            <ul class="contact-list">
-              <li><strong>Email:</strong> <a href="mailto:saymonchristianvilla@gmail.com">saymonchristianvilla@gmail.com</a></li>
-              <li><strong>GitHub:</strong> <a href="https://github.com/scvilla07th" target="_blank">github.com/scvilla07th</a></li>
-              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/saymon-christian-villa/" target="_blank">linkedin.com/in/saymon-christian-villa</a></li>
-            </ul>
-          </div>
-
-          <form id="contactForm" class="contact-form" onsubmit="return handleContact(event)">
-            <label>
-              <span>Name</span>
-              <input type="text" id="name" required placeholder="Your name" />
-            </label>
-            <label>
-              <span>Email</span>
-              <input type="email" id="email" required placeholder="you@example.com" />
-            </label>
-            <label>
-              <span>Message</span>
-              <textarea id="message" required placeholder="Tell me about your project..." rows="5"></textarea>
-            </label>
-            <div class="form-actions">
-              <button class="btn-primary" type="submit">Send</button>
-              <button class="btn-outline" type="button" onclick="mailtoMe()">Email Directly</button>
-            </div>
-            <p id="formStatus" class="form-status" aria-live="polite"></p>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Saymon Christian Villa — Built with ❤️</p>
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="section">
+    <h2 class="section-title animate-slide">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card animate-up"><i class="ri-code-s-slash-line"></i><p>HTML / CSS / JS</p></div>
+      <div class="skill-card animate-up"><i class="ri-database-2-line"></i><p>Database Design</p></div>
+      <div class="skill-card animate-up"><i class="ri-cpu-line"></i><p>Embedded Systems</p></div>
+      <div class="skill-card animate-up"><i class="ri-terminal-box-line"></i><p>Verilog / FPGA</p></div>
+      <div class="skill-card animate-up"><i class="ri-brain-line"></i><p>Speech Recognition</p></div>
+      <div class="skill-card animate-up"><i class="ri-git-branch-line"></i><p>Git & GitHub</p></div>
     </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="section">
+    <h2 class="section-title animate-slide">Projects</h2>
+    <div class="project-grid">
+      <div class="project-card animate-fade">
+        <h3>🔊 Speech Recognition App</h3>
+        <p>A Raspberry Pi-based pronunciation detection system using Vosk and Google APIs.</p>
+        <a href="#">View Source</a>
+      </div>
+      <div class="project-card animate-fade">
+        <h3>🏙️ Elevator System</h3>
+        <p>A four-story digital elevator control system built in Verilog for FPGA simulation.</p>
+        <a href="#">View Source</a>
+      </div>
+      <div class="project-card animate-fade">
+        <h3>🌡️ Temperature Converter</h3>
+        <p>A digital temperature converter built using Verilog and FPGA logic.</p>
+        <a href="#">View Source</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section contact">
+    <h2 class="section-title animate-slide">Contact Me</h2>
+    <p class="contact-text animate-fade">Want to work together or see more source code? Drop a message below.</p>
+    <ul class="contact-list animate-up">
+      <li><strong>Email:</strong> <a href="mailto:saymonchristianvilla@gmail.com">saymonchristianvilla@gmail.com</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/scvilla07th" target="_blank">github.com/scvilla07th</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/saymon-christian-villa/" target="_blank">linkedin.com/in/saymon-christian-villa</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Saymon Christian Villa. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
